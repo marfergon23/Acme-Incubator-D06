@@ -1,0 +1,13 @@
+anonymous.tool-record.form.label.title = Title:
+anonymous.tool-record.form.label.sector = Activity sector:
+anonymous.tool-record.form.label.inventor = Inventor name:
+anonymous.tool-record.form.label.description = Description:
+anonymous.tool-record.form.label.web = Web site:
+anonymous.tool-record.form.label.email = Email:
+anonymous.tool-record.form.label.indication = Indication:
+anonymous.tool-record.form.label.stars = Number of stars:
+anonymous.tool-record.form.button.return = Return
+
+anonymous.tool-record.list.label.title = Title
+anonymous.tool-record.list.label.sector = Activity sector
+anonymous.tool-record.list.label.stars = Number of stars

@@ -1,0 +1,19 @@
+entrepreneur.workProgramme.form.label.title = Title:
+entrepreneur.workProgramme.form.label.moment = Moment:
+entrepreneur.workProgramme.form.label.deadline = Deadline:
+entrepreneur.workProgramme.form.label.budget = Budget:
+
+entrepreneur.workProgramme.form.button.return = Return
+
+entrepreneur.workProgramme.list.label.title = Title
+entrepreneur.workProgramme.list.label.moment = Moment
+
+entrepreneur.work-programme.form.button.create-workProgramme = Create Work Programme
+entrepreneur.work-programme.form.button.update = Update
+entrepreneur.work-programme.form.button.delete = Delete
+entrepreneur.work-programme.form.button.create = Create
+
+entrepreneur.work-programme.form.error.tituloConSpam = Title with spam
+entrepreneur.work-programme.form.error.fechaIncorrecta = Incorrect Moment
+entrepreneur.work-programme.form.error.dineroIncorrecto = Incorrect Money
+

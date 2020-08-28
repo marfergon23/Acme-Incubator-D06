@@ -1,0 +1,13 @@
+authenticated.technology.form.label.title = Título:
+authenticated.technology.form.label.activitySector = Sector de Actividad:
+authenticated.technology.form.label.inventorName = Nombre del Inventor:
+authenticated.technology.form.label.description = Descripción:
+authenticated.technology.form.label.webSite = Sitio Web:
+authenticated.technology.form.label.email = Email:
+authenticated.technology.form.label.indication = Indicación:
+authenticated.technology.form.label.stars = Número de Estrellas:
+authenticated.technology.form.button.return = Return
+
+authenticated.technology.list.label.title = Título
+authenticated.technology.list.label.activitySector = Sector de Actividad
+authenticated.technology.list.label.stars = Número de Estrellas

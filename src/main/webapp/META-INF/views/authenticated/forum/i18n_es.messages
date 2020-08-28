@@ -1,0 +1,15 @@
+authenticated.forum.list-mine.label.title = Título
+
+authenticated.forum.form.label.title = Título
+authenticated.forum.form.label.users = Usuarios
+authenticated.forum.form.label.investmentTitle = Título de la ronda de inversión
+authenticated.forum.form.buttom.messages = Mensajes
+authenticated.forum.form.button.goUpdate = Actualizar usuarios
+authenticated.forum.form.button.update = Actualizar
+authenticated.forum.form.button.delete = Borrar
+authenticated.forum.form.message.adding = Si quiere añadir un usuario, debe hacerlo de esta manera: ",nuevo usuario".
+authenticated.forum.form.message.deleting = Si quiere eliminar un usuario, debe borrar el usuario que desee eliminar y la coma que le precede.
+authenticated.forum.error.users = El usuario que ha añadido no existe.
+authenticated.forum.form.error.spamword-title = Este texto es considerado spam
+authenticated.forum.form.button.create = Crear mensaje
+authenticated.forum.form.button.return = Volver

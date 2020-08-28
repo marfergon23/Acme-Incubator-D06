@@ -1,0 +1,9 @@
+authenticated.workProgramme.form.label.title = Título:
+authenticated.workProgramme.form.label.moment = Fecha de creación:
+authenticated.workProgramme.form.label.deadline = Fecha final:
+authenticated.workProgramme.form.label.budget = Presupuesto:
+
+authenticated.workProgramme.form.button.return = Volver
+
+authenticated.workProgramme.list.label.title = Título
+authenticated.workProgramme.list.label.moment = fecha de creación

@@ -1,0 +1,19 @@
+investor.investmentRound.form.label.ticker = Ticker:
+investor.investmentRound.form.label.moment = Moment:
+investor.investmentRound.form.label.kindRound = Kind round:
+investor.investmentRound.form.label.title = Title:
+investor.investmentRound.form.label.description = Description:
+investor.investmentRound.form.label.amountMoney = Amount money:
+investor.investmentRound.form.label.link = Link:
+
+investor.application.create = Apply investment round
+
+investor.investmentRound.form.button.return = Return
+
+investor.application.create = Apply investment round
+
+investor.investmentRound.list.label.ticker = Ticker
+investor.investmentRound.list.label.kindRound = Kind round
+investor.investmentRound.list.label.title = Title
+
+investor.application.exist = This investment round is already apply

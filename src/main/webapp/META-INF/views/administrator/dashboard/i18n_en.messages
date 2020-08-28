@@ -1,0 +1,19 @@
+administrator.dashboard.form.label.numberNotices = Number of Notices:
+administrator.dashboard.form.label.numberTechnologies = Number of Technoloy Records:
+administrator.dashboard.form.label.numberTools = Number of Tool Records:
+
+administrator.dashboard.form.label.minMoneyActiveInquiries = Minimum Money of Active Inquiries:
+administrator.dashboard.form.label.maxMoneyActiveInquiries = Maximum Money of Active Inquiries:
+administrator.dashboard.form.label.averageMoneyActiveInquiries = Average Money of Active Inquiries:
+administrator.dashboard.form.label.stddevMoneyActiveInquiries = Standard Deviation Money of Active Inquiries: 
+
+administrator.dashboard.form.label.minMoneyActiveOvertures = Minimum Money of Active Overtures:
+administrator.dashboard.form.label.maxMoneyActiveOvertures = Maximun Money of Active Overtures:
+administrator.dashboard.form.label.averageMoneyActiveOvertures = Average Money of Active Overtures:
+administrator.dashboard.form.label.stddevMoneyActiveOvertures = Standard Deviation Money of Active Overtures:
+
+administrator.dashboard.form.label.averageInvestmentRoundsPerEntrepreneur = Average number of Investment Rounds per Entrepreneur:
+administrator.dashboard.form.label.averageApplicationsPerEntrepreneur = Average number of Applications per Entrepreneur:
+administrator.dashboard.form.label.averageApplicationsPerInvestor = Average number of Applications per Investor:
+
+administrator.dashboard.form.button.return = Return

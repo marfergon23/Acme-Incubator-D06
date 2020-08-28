@@ -1,0 +1,14 @@
+administrator.notice.form.label.headerPicture = Header Picture:
+administrator.notice.form.label.title = Title:
+administrator.notice.form.label.creationMoment = Creation moment:
+administrator.notice.form.label.deadline = Deadline:
+administrator.notice.form.label.body = Body:
+administrator.notice.form.label.links = Links:
+administrator.notice.form.button.return = Return:
+administrator.notice.form.button.create = Create
+administrator.notice.form.label.checkbox = Confirm
+administrator.notice.form.error.accept= Error
+
+administrator.notice.list.label.title = Title
+administrator.notice.list.label.body = Body
+administrator.notice.list.label.headerPicture = Header Picture

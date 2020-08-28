@@ -1,0 +1,34 @@
+entrepreneur.investmentRound.form.label.ticker = Ticker:
+entrepreneur.investmentRound.form.label.moment = Fecha de creación:
+entrepreneur.investmentRound.form.label.kindRound = Tipo de ronda:
+entrepreneur.investmentRound.form.label.title = Título:
+entrepreneur.investmentRound.form.label.description = Descripción:
+entrepreneur.investmentRound.form.label.amountMoney = Cantidad de dinero:
+entrepreneur.investmentRound.form.label.link = Enlace:
+entrepreneur.investmentRound.form.label.finalMode = Modo Final:
+entrepreneur.investmentRound.form.label.finalModeFalse = NO
+entrepreneur.investmentRound.form.label.finalModeTrue = SÍ
+
+entrepreneur.workProgramme.list = Lista de programas de trabajo
+
+entrepreneur.investmentRound.form.button.return = Volver
+
+entrepreneur.investmentRound.list.label.ticker = Ticker
+entrepreneur.investmentRound.list.label.kindRound = Tipo de ronda
+entrepreneur.investmentRound.list.label.title = Titulo
+
+entrepreneur.investmentRound.ticker.pattern = Formato no válido
+
+entrepreneur.investment-round.form.button.create = Crear
+entrepreneur.investment-round.form.button.update = Actualizar
+entrepreneur.investment-round.form.button.delete = Eliminar
+
+entrepreneur.investment-round.form.error.tickerRepetido = Ticker Repetido
+entrepreneur.investment-round.form.error.tickerIncorrecto = Ticker Incorrecto
+entrepreneur.investment-round.form.error.tituloConSpam = Título con spam
+entrepreneur.investment-round.form.error.descripcionConSpam = Descripción con spam
+entrepreneur.investment-round.form.error.dineroIncorrecto = Dinero Incorrecto
+entrepreneur.investment-round.form.error.tieneSolucitudes = Tiene Solicitudes
+
+entrepreneur.investment-round.form.label.accounting-record = Lista registros contables
+

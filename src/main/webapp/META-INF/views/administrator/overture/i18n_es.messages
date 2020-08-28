@@ -1,0 +1,19 @@
+administrator.overture.list.label.moment = Momento
+administrator.overture.list.label.title = Título
+
+administrator.overture.form.label.title = Título
+administrator.overture.form.label.moment = Momento
+administrator.overture.form.label.deadline = Fecha límite
+administrator.overture.form.label.description = Descripción
+administrator.overture.form.label.email = Correo electrónico
+administrator.overture.form.label.minMoney = Mínimo de dinero
+administrator.overture.form.label.maxMoney = Máximo de dinero
+administrator.overture.form.button.update = Actualizar
+administrator.overture.form.button.delete = Borrar
+administrator.overture.form.button.create = Crear
+administrator.overture.form.button.return = Volver
+
+administrator.overture.error.deadline = La fecha límite debe estar en el futuro
+administrator.overture.error.minMoney = La cantidad introducida debe ser Euro
+administrator.overture.error.maxMoney = La cantidad introducida debe ser Euro
+administrator.overture.error.minMoneyLower = El valor mínimo debe ser menor que el valor máximo

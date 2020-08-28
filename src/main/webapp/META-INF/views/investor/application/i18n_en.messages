@@ -1,0 +1,27 @@
+investor.application.form.label.ticker = Ticker:
+investor.application.form.label.moment = Creation Moment:
+investor.application.form.label.statement = Statement:
+investor.application.form.label.moneyOffer = Money Offer:
+investor.application.form.label.investmentRound = Investment Round:
+investor.application.form.button.return = Return
+
+investor.application.form.label.status = Status
+investor.application.form.label.status.rejected = Rejected
+investor.application.form.label.status.accepted = Accepted
+investor.application.form.label.status.pending = Pending
+investor.application.form.label.rejectionJustification = Rejection justification
+
+investor.application.list.label.ticker = Ticker
+investor.application.list.label.moment = Creation Moment
+
+investor.application.form.label.investmentRound.ticker = Investment Round Ticker:
+
+investor.application.form.error.tickerRepetido = this ticker already exist
+
+investor.application.form.error.tickerIncorrecto = this ticker is incorrect, try xxx-yy-zzzzzz and the xxx must be your activity sector
+
+investor.application.form.error.dineroIncorrecto = value incorrect
+
+investor.application.ticker.pattern = the pattern of ticker is incorrect
+
+investor.application.form.button.create = Create

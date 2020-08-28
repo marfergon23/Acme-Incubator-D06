@@ -1,0 +1,17 @@
+administrator.technology.form.label.title = Título:
+administrator.technology.form.label.activitySector = Sector de Actividad:
+administrator.technology.form.label.inventorName = Nombre del Inventor:
+administrator.technology.form.label.description = Descripción:
+administrator.technology.form.label.webSite = Sitio Web:
+administrator.technology.form.label.email = Email:
+administrator.technology.form.label.indication = Indicación:
+administrator.technology.form.label.stars = Número de Estrellas:
+administrator.technology.form.button.return = Return
+
+administrator.technology.list.label.title = Título
+administrator.technology.list.label.activitySector = Sector de Actividad
+administrator.technology.list.label.stars = Número de Estrellas
+
+administrator.technology.form.button.update = Actualizar
+administrator.technology.form.button.delete = Eliminar
+administrator.technology.form.button.create = Crear

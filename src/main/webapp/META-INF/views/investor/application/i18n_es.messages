@@ -1,0 +1,27 @@
+investor.application.form.label.ticker = Ticker:
+investor.application.form.label.moment = Momento de Creación:
+investor.application.form.label.statement = Declaración:
+investor.application.form.label.moneyOffer = Oferta Monetaria:
+investor.application.form.label.investmentRound = Ronda de Inversión:
+investor.application.form.button.return = Volver
+
+investor.application.form.label.status = Estado
+investor.application.form.label.status.rejected = Rechazado
+investor.application.form.label.status.accepted = Aceptado
+investor.application.form.label.status.pending = Pendiente
+investor.application.form.label.rejectionJustification = Justificacion del rechazo
+
+investor.application.list.label.ticker = Ticker
+investor.application.list.label.moment = Momento de Creación
+
+investor.application.form.label.investmentRound.ticker = Ticker de Ronda de Inversión:
+
+investor.application.form.error.tickerRepetido = este ticker ya existe
+
+investor.application.form.error.tickerIncorrecto = este ticker es incorrecto, prueba xxx-yy-zzzzzz, y xxx debe de ser tu sector de actividad
+
+investor.application.form.error.dineroIncorrecto = valor incorrecto
+
+investor.application.ticker.pattern = El patron del ticker no es adecuado
+
+investor.application.form.button.create = Crear

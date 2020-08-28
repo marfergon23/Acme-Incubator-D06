@@ -1,0 +1,19 @@
+investor.investmentRound.form.label.ticker = Ticker:
+investor.investmentRound.form.label.moment = Fecha de creación:
+investor.investmentRound.form.label.kindRound = Tipo de ronda:
+investor.investmentRound.form.label.title = Título:
+investor.investmentRound.form.label.description = Descripción:
+investor.investmentRound.form.label.amountMoney = Cantidad de dinero:
+investor.investmentRound.form.label.link = Enlace:
+
+investor.application.create = Solicitar ronda de inversión
+
+investor.investmentRound.form.button.return = Volver
+
+investor.application.create = Solicitar ronda de inversión
+
+investor.investmentRound.list.label.ticker = Ticker
+investor.investmentRound.list.label.kindRound = Tipo de ronda
+investor.investmentRound.list.label.title = Titulo
+
+investor.application.exist = Esta ronda de inversion ya esta solicitada

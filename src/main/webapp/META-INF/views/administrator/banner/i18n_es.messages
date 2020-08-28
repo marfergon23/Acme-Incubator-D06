@@ -1,0 +1,16 @@
+administrator.banner.form.label.picture = Imagen
+administrator.banner.form.label.slogan = Eslogan
+administrator.banner.form.label.url = URL
+administrator.banner.form.label.holderName = Patrocinador
+administrator.banner.form.label.number = Número de Tarjeta de Crédito
+administrator.banner.form.label.brand = Marca
+administrator.banner.form.label.monthExpiration = Mes de Caducidad de Tarjeta de Crédito
+administrator.banner.form.label.yearExpiration = Año de Caducidad de Tarjeta de Crédito
+administrator.banner.form.label.cvv = CVV de Tarjeta de Crédito
+
+administrator.banner.form.button.update = Editar
+administrator.banner.form.button.delete = Borrar
+administrator.banner.form.button.return = Volver
+
+administrator.banner.list.label.slogan = Eslogan
+administrator.banner.list.label.brand = Marca

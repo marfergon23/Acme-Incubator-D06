@@ -1,0 +1,12 @@
+authenticated.inquirie.form.label.title = Tiítulo:
+authenticated.inquirie.form.label.creationDate = Fecha inicial:
+authenticated.inquirie.form.label.endDate = Fecha final:
+authenticated.inquirie.form.label.description = Descripción:
+authenticated.inquirie.form.label.minMoney = Dinero mínimo:
+authenticated.inquirie.form.label.maxMoney = Dinero máximo:
+authenticated.inquirie.form.label.email = Correo:
+
+authenticated.inquirie.form.button.return = Volver
+
+authenticated.inquirie.list.label.title = Título
+authenticated.inquirie.list.label.creationDate = Fecha inicial

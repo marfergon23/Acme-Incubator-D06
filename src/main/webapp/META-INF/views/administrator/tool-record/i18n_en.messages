@@ -1,0 +1,17 @@
+administrator.tool-record.form.label.title = Title:
+administrator.tool-record.form.label.sector = Activity sector:
+administrator.tool-record.form.label.inventor = Inventor name:
+administrator.tool-record.form.label.description = Description:
+administrator.tool-record.form.label.web = Web site:
+administrator.tool-record.form.label.email = Email:
+administrator.tool-record.form.label.indication = Open source:
+administrator.tool-record.form.label.stars = Number of stars:
+
+administrator.tool-record.form.button.create = Create
+administrator.tool-record.form.button.update = Update
+administrator.tool-record.form.button.delete = Delete
+administrator.tool-record.form.button.return = Return
+
+administrator.tool-record.list.label.title = Title
+administrator.tool-record.list.label.sector = Activity sector
+administrator.tool-record.list.label.stars = Number of stars

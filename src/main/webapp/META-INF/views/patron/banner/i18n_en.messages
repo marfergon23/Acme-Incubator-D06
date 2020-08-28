@@ -1,0 +1,20 @@
+patron.banner.form.label.picture = Picture
+patron.banner.form.label.slogan = Slogan
+patron.banner.form.label.url = URL
+patron.banner.form.label.holderName = Holder Name
+patron.banner.form.label.number = Credit Card Number
+patron.banner.form.label.brand = Brand
+patron.banner.form.label.monthExpiration = Credit Card Expiration Month
+patron.banner.form.label.yearExpiration = Credit Card Expiration Year
+patron.banner.form.label.cvv = Credit Card CVV
+patron.banner.form.label.patron = Patron
+
+patron.banner.form.button.create = Create
+patron.banner.form.button.update = Update
+patron.banner.form.button.delete = Delete
+patron.banner.form.button.return = Return
+
+patron.banner.form.button.card.create = Add Credit Card
+
+patron.banner.list.label.slogan = Slogan
+patron.banner.list.label.url = URL

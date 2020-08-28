@@ -1,0 +1,11 @@
+anonymous.notice.form.label.headerPicture = Imagen de encabezado:
+anonymous.notice.form.label.title = Título:
+anonymous.notice.form.label.creationMoment = Fecha de creación:
+anonymous.notice.form.label.deadline = Fecha límite:
+anonymous.notice.form.label.body = Cuerpo:
+anonymous.notice.form.label.links = Enlaces:
+anonymous.notice.form.button.return = Atrás
+
+anonymous.notice.list.label.title = Título
+anonymous.notice.list.label.body = Cuerpo
+anonymous.notice.list.label.headerPicture = Imagen de encabezado

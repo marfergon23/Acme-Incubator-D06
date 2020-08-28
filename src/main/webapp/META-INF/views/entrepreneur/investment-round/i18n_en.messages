@@ -1,0 +1,35 @@
+entrepreneur.investmentRound.form.label.ticker = Ticker:
+entrepreneur.investmentRound.form.label.moment = Moment:
+entrepreneur.investmentRound.form.label.kindRound = Kind round:
+entrepreneur.investmentRound.form.label.title = Title:
+entrepreneur.investmentRound.form.label.description = Description:
+entrepreneur.investmentRound.form.label.amountMoney = Amount money:
+entrepreneur.investmentRound.form.label.link = Link:
+entrepreneur.investmentRound.form.label.finalMode = Final Mode:
+entrepreneur.investmentRound.form.label.finalModeFalse = NO
+entrepreneur.investmentRound.form.label.finalModeTrue = YES
+
+entrepreneur.workProgramme.list = List of works programmes
+
+entrepreneur.investmentRound.form.button.return = Return
+
+entrepreneur.investmentRound.list.label.ticker = Ticker
+entrepreneur.investmentRound.list.label.kindRound = Kind round
+entrepreneur.investmentRound.list.label.title = Title
+
+entrepreneur.investmentRound.ticker.pattern = Invalid pattern
+
+
+entrepreneur.investment-round.form.button.create = Create
+entrepreneur.investment-round.form.button.update = Update
+entrepreneur.investment-round.form.button.delete = Delete
+
+entrepreneur.investment-round.form.error.tickerRepetido = Repeat Ticker
+entrepreneur.investment-round.form.error.tickerIncorrecto = Incorrect Ticker
+entrepreneur.investment-round.form.error.tituloConSpam = Title with spam
+entrepreneur.investment-round.form.error.descripcionConSpam = Description with spam
+entrepreneur.investment-round.form.error.dineroIncorrecto = Incorrect Money
+entrepreneur.investment-round.form.error.tieneSolucitudes = Has Applications
+
+entrepreneur.investment-round.form.label.accounting-record = List accounting record
+

@@ -1,0 +1,19 @@
+authenticated.investmentRound.form.label.ticker = Ticker:
+authenticated.investmentRound.form.label.moment = Fecha de creación:
+authenticated.investmentRound.form.label.kindRound = Tipo de ronda:
+authenticated.investmentRound.form.label.title = Título:
+authenticated.investmentRound.form.label.description = Descripción:
+authenticated.investmentRound.form.label.amountMoney = Cantidad de dinero:
+authenticated.investmentRound.form.label.link = Enlace:
+
+authenticated.workProgramme.list = Lista de programas de trabajo
+
+authenticated.forum.form.button.list-mine-forum = Ir a mis foros
+authenticated.forum.form.button.create-forum = Crear foro
+authenticated.investmentRound.form.button.return = Volver
+
+authenticated.investmentRound.list.label.ticker = Ticker
+authenticated.investmentRound.list.label.kindRound = Tipo de ronda
+authenticated.investmentRound.list.label.title = Titulo
+
+authenticated.investment-round.form.label.accounting-record= Lista registros contables

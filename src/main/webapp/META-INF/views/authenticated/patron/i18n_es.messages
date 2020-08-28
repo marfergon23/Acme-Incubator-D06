@@ -1,0 +1,9 @@
+authenticated.patron.form.label.organisation = Organización:
+authenticated.patron.form.label.number = Número:
+authenticated.patron.form.label.monthExpiration = Mes de Expiración:
+authenticated.patron.form.label.yearExpiration = Año de Expiración:
+authenticated.patron.form.label.cvv = CVV:
+
+authenticated.patron.form.button.create = Registrarse
+authenticated.patron.form.button.update = Actualizar
+authenticated.patron.form.button.return = Volver

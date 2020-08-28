@@ -1,0 +1,10 @@
+authenticated.workProgramme.form.label.title = Title:
+authenticated.workProgramme.form.label.moment = Moment:
+authenticated.workProgramme.form.label.deadline = Deadline:
+authenticated.workProgramme.form.label.budget = Budget:
+
+authenticated.workProgramme.form.button.return = Return
+
+authenticated.workProgramme.list.label.title = Title
+authenticated.workProgramme.list.label.moment = Moment
+

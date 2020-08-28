@@ -1,0 +1,22 @@
+entrepreneur.application.form.label.ticker = Ticker
+entrepreneur.application.form.label.moment = Moment
+entrepreneur.application.form.label.statement = Statement
+entrepreneur.application.form.label.moneyOffer = Money Offer
+entrepreneur.application.form.label.referenceInvestmentRound = Ticker Investment Round
+entrepreneur.application.form.label.InvestmentRoundEntrepreneur= Entrepreneur
+
+entrepreneur.application.list.label.ticker = Ticker
+entrepreneur.application.list.label.moment = Moment
+entrepreneur.application.list.label.statement = Statement
+entrepreneur.application.list.label.moment = Moment
+
+entrepreneur.application.form.label.status = Status
+entrepreneur.application.form.label.status.pending = Pending
+entrepreneur.application.form.label.status.accepted = Accepted
+entrepreneur.application.form.label.status.rejected = Rejected
+entrepreneur.application.form.label.rejectionJustification = Rejection justification
+entrepreneur.application.form.error.rejectionJustification = You have to justificate the rejection
+entrepreneur.application.form.button.update = Update status
+
+
+entrepreneur.investmentRound.form.button.return = Return

@@ -1,0 +1,22 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.bookKeeperRequest.form.label.firm = Firm:
+administrator.bookKeeperRequest.form.label.responsibilityStatement = Responsibility Statement:
+administrator.bookKeeperRequest.form.label.status = Status:
+administrator.bookKeeperRequest.form.label.status.accepted= Accept
+administrator.bookKeeperRequest.form.label.status.rejected= Reject
+
+administrator.bookKeeperRequest.list.label.firmName= Firm
+administrator.bookKeeperRequest.list.label.username= User
+
+administrator.bookKeeperRequest.form.button.update= Update
+administrator.bookKeeperRequest.form.button.return = Return
+

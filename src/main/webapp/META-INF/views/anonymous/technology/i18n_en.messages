@@ -1,0 +1,13 @@
+anonymous.technology.form.label.title = Title:
+anonymous.technology.form.label.activitySector = Activity Sector:
+anonymous.technology.form.label.inventorName = Inventor Name:
+anonymous.technology.form.label.description = Description:
+anonymous.technology.form.label.webSite = Web Site:
+anonymous.technology.form.label.email = Email:
+anonymous.technology.form.label.indication = Indication:
+anonymous.technology.form.label.stars = Number of Stars:
+anonymous.technology.form.button.return = Return
+
+anonymous.technology.list.label.title = Title
+anonymous.technology.list.label.activitySector = Activity Sector
+anonymous.technology.list.label.stars = Number of Stars

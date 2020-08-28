@@ -1,0 +1,19 @@
+authenticated.investmentRound.form.label.ticker = Ticker:
+authenticated.investmentRound.form.label.moment = Moment:
+authenticated.investmentRound.form.label.kindRound = Kind round:
+authenticated.investmentRound.form.label.title = Title:
+authenticated.investmentRound.form.label.description = Description:
+authenticated.investmentRound.form.label.amountMoney = Amount money:
+authenticated.investmentRound.form.label.link = Link:
+
+authenticated.workProgramme.list = List of works programmes
+
+authenticated.forum.form.button.list-mine-forum = Go to my forums
+authenticated.forum.form.button.create-forum = Create forum
+authenticated.investmentRound.form.button.return = Return
+
+authenticated.investmentRound.list.label.ticker = Ticker
+authenticated.investmentRound.list.label.kindRound = Kind round
+authenticated.investmentRound.list.label.title = Title
+
+authenticated.investment-round.form.label.accounting-record = List accounting record

@@ -1,0 +1,31 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.accounting-record.form.label.title = Título:
+authenticated.accounting-record.form.label.creationMoment = Fecha de creación:
+authenticated.accounting-record.form.label.body = Cuerpo:
+
+authenticated.accounting-record.list.label.title = Título
+authenticated.accounting-record.list.label.body = Cuerpo
+authenticated.accounting-record.list.label.status = Estado
+
+authenticated.accounting-record.form.label.finalMode = Estado final:
+authenticated.accounting-record.form.label.finalMode.final = Modo Final
+authenticated.accounting-record.form.label.finalMode.draft = Modo Borrador
+
+authenticated.accounting-record.form.label.status = Estado
+authenticated.accounting-record.form.label.status.draft = Borrador
+authenticated.accounting-record.form.label.status.published = Publicado
+
+
+authenticated.accounting-record.form.button.return = Volver
+authenticated.investment-round.list.button.return = Volver
+authenticated.accounting-record.form.button.create = Crear
+authenticated.accounting-record.form.button.update= Actualizar

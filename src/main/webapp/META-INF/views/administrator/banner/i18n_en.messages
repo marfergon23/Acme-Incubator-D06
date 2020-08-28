@@ -1,0 +1,17 @@
+administrator.banner.form.label.picture = Picture
+administrator.banner.form.label.slogan = Slogan
+administrator.banner.form.label.url = URL
+administrator.banner.form.label.holderName = Holder Name
+administrator.banner.form.label.number = Credit Card Number
+administrator.banner.form.label.brand = Brand
+administrator.banner.form.label.monthExpiration = Credit Card Expiration Month
+administrator.banner.form.label.yearExpiration = Credit Card Expiration Year
+administrator.banner.form.label.cvv = Credit Card CVV
+
+administrator.banner.form.button.update = Update
+administrator.banner.form.button.delete = Delete
+administrator.banner.form.button.return = Return
+
+administrator.banner.list.label.slogan = Slogan
+administrator.banner.list.label.brand = Brand
+

@@ -1,0 +1,31 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+entrepreneur.accounting-record.form.label.title = Titulo:
+entrepreneur.accounting-record.form.label.creationMoment = Momento de creacion:
+entrepreneur.accounting-record.form.label.body = Cuerpo:
+
+entrepreneur.accounting-record.list.label.title = Titulo
+entrepreneur.accounting-record.list.label.body = Cuerpo
+entrepreneur.accounting-record.list.label.status = Estado
+
+entrepreneur.accounting-record.form.label.finalMode = Estado final:
+entrepreneur.accounting-record.form.label.finalMode.final = Modo Final
+entrepreneur.accounting-record.form.label.finalMode.draft = Modo Borrador
+
+entrepreneur.accounting-record.form.label.status = Estado
+entrepreneur.accounting-record.form.label.status.draft = Borrador
+entrepreneur.accounting-record.form.label.status.published = Publicado
+
+
+entrepreneur.accounting-record.form.button.return = Volver
+entrepreneur.investment-round.list.button.return = Volver
+entrepreneur.accounting-record.form.button.create = Crear
+entrepreneur.accounting-record.form.button.update= Actualizar

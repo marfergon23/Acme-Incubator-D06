@@ -1,0 +1,19 @@
+  
+authenticated.message.list.label.title = Title:
+authenticated.message.list.label.tags = Tags:
+
+authenticated.message.list.button.return = Return
+
+authenticated.message.form.label.title = Title:
+authenticated.message.form.label.moment = Creation moment:
+authenticated.message.form.label.tags = Tags:
+authenticated.message.form.label.body = Body:
+authenticated.message.form.label.user = User:
+
+authenticated.message.form.label.confirm = Confirm
+
+authenticated.message.form.button.create = Create message
+authenticated.message.form.button.return = Return
+
+authenticated.message.form.error.must-confirm = You must confirm
+authenticated.message.form.error.spam = The text is spam

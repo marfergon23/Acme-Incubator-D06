@@ -1,0 +1,19 @@
+administrator.dashboard.form.label.numberNotices = Número de Anuncios:
+administrator.dashboard.form.label.numberTechnologies = Número de Registros Tecnológicos:
+administrator.dashboard.form.label.numberTools = Número de Registros de Herramientas:
+
+administrator.dashboard.form.label.minMoneyActiveInquiries = Mínimo Dinero de Consultas Activas:
+administrator.dashboard.form.label.maxMoneyActiveInquiries = Máximo Dinero de Consultas Activas:
+administrator.dashboard.form.label.averageMoneyActiveInquiries = Media de Dinero de Consultas Activas:
+administrator.dashboard.form.label.stddevMoneyActiveInquiries = Desviación Típica de Consultas Activas: 
+
+administrator.dashboard.form.label.minMoneyActiveOvertures = Mínimo Dinero de Propuestas Activas:
+administrator.dashboard.form.label.maxMoneyActiveOvertures = Máximo Dinero de Propuestas Activas:
+administrator.dashboard.form.label.averageMoneyActiveOvertures = Media de Dinero de Propuestas Activas:
+administrator.dashboard.form.label.stddevMoneyActiveOvertures = Desviación Típica de Propuestas Activas:
+
+administrator.dashboard.form.label.averageInvestmentRoundsPerEntrepreneur = Media de Rondas de Inversión por Emprendedor:
+administrator.dashboard.form.label.averageApplicationsPerEntrepreneur = Media de Solicitudes por Emprendedor:
+administrator.dashboard.form.label.averageApplicationsPerInvestor = Media de Solicitudes por Inversor:
+
+administrator.dashboard.form.button.return = Volver

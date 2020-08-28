@@ -1,0 +1,9 @@
+anonymous.donaire-bulletin.form.label.author = Author
+anonymous.donaire-bulletin.form.label.text = Text
+anonymous.donaire-bulletin.form.button.create = Publish!
+anonymous.donaire-bulletin.form.button.return = Return
+
+
+anonymous.donaire-bulletin.list.label.author = Author
+anonymous.donaire-bulletin.list.label.text = Text
+anonymous.donaire-bulletin.list.label.moment = Moment

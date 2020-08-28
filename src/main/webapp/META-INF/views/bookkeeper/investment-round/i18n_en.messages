@@ -1,0 +1,16 @@
+bookkeeper.investment-round.form.label.ticker = Ticker
+bookkeeper.investment-round.form.label.moment = Moment
+bookkeeper.investment-round.form.label.kindRound = Kind of Round
+bookkeeper.investment-round.form.label.title = Title
+bookkeeper.investment-round.form.label.description = Description
+bookkeeper.investment-round.form.label.amountMoney = Amount of Money
+bookkeeper.investment-round.form.label.link = Link
+
+bookkeeper.investment-round.form.button.return = Return
+
+bookkeeper.investment-round.list.label.title = Title
+bookkeeper.investment-round.list.label.amountMoney = Money
+
+bookkeeper.investment-round.form.button.create = Create an Accounting Record
+bookkeeper.investment-round.form.label.accounting-record= List Accounting Record
+bookkeeper.investment-round.form.label.accounting-record-published = List Accounting Record Published

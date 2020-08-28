@@ -1,0 +1,7 @@
+authenticated.investor.form.label.firmName = Nombre de la empresa
+authenticated.investor.form.label.activitySector = Sector de actividad
+authenticated.investor.form.label.profile = Perfil
+
+authenticated.investor.form.button.create = Registrar
+authenticated.investor.form.button.update = Actualizar
+authenticated.investor.form.button.return = Volver

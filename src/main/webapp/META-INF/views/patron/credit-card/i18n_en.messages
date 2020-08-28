@@ -1,0 +1,11 @@
+patron.creditCard.label.holder = Holder name
+patron.creditCard.label.number = Credit Card number
+patron.creditCard.label.brand = Brand
+patron.creditCard.label.month = Expiration Month
+patron.creditCard.label.year = Expiration Year
+patron.creditCard.label.cvv = CVV
+	
+patron.creditCard.form.button.create = Create
+patron.creditCard.form.button.update = Update
+	
+patron.creditCard.button.return = Return
