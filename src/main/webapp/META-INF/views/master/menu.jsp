@@ -10,8 +10,9 @@
 - purposes.  The copyright owner does not offer any warranties or representations, nor do
 - they accept any liabilities with respect to them.
 --%>
+<!--  
 
-<%@page language="java" import="acme.framework.helpers.PrincipalHelper,acme.entities.roles.Provider,acme.entities.roles.Consumer"%>
+-->
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
@@ -136,14 +137,6 @@
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
 		</acme:menu-option>
 		
-
-		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
-			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
-		</acme:menu-option>
-
-		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
-			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
-		</acme:menu-option>
 		
 
 		<acme:menu-option code="master.menu.entrepreneur" access="hasRole('Entrepreneur')">
