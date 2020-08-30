@@ -9,7 +9,7 @@
 	<acme:form-textbox code="authenticated.tool-record.form.label.inventor" path="inventor" />
 	<acme:form-textarea code="authenticated.tool-record.form.label.description" path="description" />
 	<acme:form-url code="authenticated.tool-record.form.label.web" path="web" />
-	<acme:form-textbox code="authenticated.tool-record.form.label.email" path="email" />
+	<acme:form-email code="authenticated.tool-record.form.label.email" path="email" placeholder="Display Name <user@domain>"/>
 	<acme:form-textbox code="authenticated.tool-record.form.label.indication" path="indication" />
 	<acme:form-textbox code="authenticated.tool-record.form.label.stars" path="stars" />
 	

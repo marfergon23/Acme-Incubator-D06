@@ -32,7 +32,9 @@
         `moment` datetime(6),
         `money_offer_amount` double precision,
         `money_offer_currency` varchar(255),
+        `rejection_justification` varchar(255),
         `statement` varchar(255),
+        `status` integer,
         `ticker` varchar(255),
         `entrepreneur_id` integer not null,
         `investment_round_id` integer not null,
@@ -50,16 +52,21 @@
     create table `banner` (
        `id` integer not null,
         `version` integer not null,
-        `brand` varchar(255),
-        `cvv` varchar(255),
-        `holder_name` varchar(255),
-        `month_expiration` integer,
-        `number` varchar(255),
         `picture` varchar(255),
         `slogan` varchar(255),
         `url` varchar(255),
-        `year_expiration` integer,
+        `credit_card_id` integer,
         `patron_id` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `book_keeper_request` (
+       `id` integer not null,
+        `version` integer not null,
+        `firm_name` varchar(255),
+        `responsibility_statement` varchar(3000),
+        `status` bit,
+        `user_account_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -96,6 +103,19 @@
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `credit_card` (
+       `id` integer not null,
+        `version` integer not null,
+        `brand` varchar(255),
+        `cvv` varchar(255),
+        `holder` varchar(255),
+        `month` integer,
+        `number` varchar(255),
+        `year` integer,
+        `patron_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -176,6 +196,7 @@
         `amount_money_amount` double precision,
         `amount_money_currency` varchar(255),
         `description` varchar(255),
+        `final_mode` bit,
         `kind_round` varchar(255),
         `link` varchar(255),
         `moment` datetime(6),
@@ -256,11 +277,8 @@
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
-        `cvv` varchar(255),
-        `month_expiration` integer,
-        `number` varchar(255),
         `organisation` varchar(255),
-        `year_expiration` integer,
+        `card_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -305,7 +323,8 @@
        `id` integer not null,
         `version` integer not null,
         `enabled` bit not null,
-        `identity_email` varchar(255),
+        `identity_email_display_name` varchar(255),
+        `identity_email_email` varchar(255),
         `identity_name` varchar(255),
         `identity_surname` varchar(255),
         `password` varchar(255),
@@ -330,6 +349,13 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDX2q2747fhp099wkn3j2yt05fhs on `application` (`status`);
+
+    alter table `book_keeper_request` 
+       add constraint UK_sljl5qffng42pku9vux2t2fp0 unique (`user_account_id`);
+
+    alter table `investment_round` 
+       add constraint UK_g31yqkckem05dgslpjk4my8t9 unique (`title`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
@@ -375,9 +401,19 @@
        references `user_account` (`id`);
 
     alter table `banner` 
+       add constraint `FKr19baq0bri0akndc7ruwhngy4` 
+       foreign key (`credit_card_id`) 
+       references `credit_card` (`id`);
+
+    alter table `banner` 
        add constraint `FKdocr1jjfgwx9ef5jbf675l360` 
        foreign key (`patron_id`) 
        references `patron` (`id`);
+
+    alter table `book_keeper_request` 
+       add constraint `FK5ix9bq8a7nw05wh16k3cua620` 
+       foreign key (`user_account_id`) 
+       references `user_account` (`id`);
 
     alter table `bookkeeper` 
        add constraint FK_krvjp9eaqyapewl2igugbo9o8 
@@ -388,6 +424,11 @@
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `credit_card` 
+       add constraint `FK31e9eqi896koc93q7yjs5yoox` 
+       foreign key (`patron_id`) 
+       references `patron` (`id`);
 
     alter table `entrepreneur` 
        add constraint FK_r6tqltqvrlh1cyy8rsj5pev1q 
@@ -418,6 +459,11 @@
        add constraint `FKik4epe9dp5q6uenarfyia7xin` 
        foreign key (`user_id`) 
        references `authenticated` (`id`);
+
+    alter table `patron` 
+       add constraint `FKlyiwy22y6u5hmqeb4s0bmoh13` 
+       foreign key (`card_id`) 
+       references `credit_card` (`id`);
 
     alter table `patron` 
        add constraint FK_8xx5nujhuio3advxc2freyu65 

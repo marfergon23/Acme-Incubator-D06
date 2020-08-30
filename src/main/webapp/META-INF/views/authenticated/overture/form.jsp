@@ -8,7 +8,7 @@
 	<acme:form-moment code="authenticated.overture.form.label.moment" path="moment"/>
 	<acme:form-moment code="authenticated.overture.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="authenticated.overture.form.label.description" path="description"/>
-	<acme:form-textbox code="authenticated.overture.form.label.email" path="email"/>
+	<acme:form-email code="authenticated.overture.form.label.email" path="email" placeholder="Display Name <user@domain>"/>
 	<acme:form-money code="authenticated.overture.form.label.minMoney" path="minMoney"/>
 	<acme:form-money code="authenticated.overture.form.label.maxMoney" path="maxMoney"/>
 	

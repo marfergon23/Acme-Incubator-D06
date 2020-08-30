@@ -15,19 +15,17 @@ package acme.datatypes;
 import java.beans.Transient;
 
 import javax.persistence.Embeddable;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 import acme.framework.datatypes.DomainDatatype;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
+
 
 @Embeddable
 @Getter
 @Setter
-@ToString
-public class UserIdentity extends DomainDatatype {
+public class Email extends DomainDatatype {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -35,28 +33,32 @@ public class UserIdentity extends DomainDatatype {
 
 	// Attributes -------------------------------------------------------------
 
-	@NotBlank
-	private String				name;
 
 	@NotBlank
-	private String				surname;
+	@javax.validation.constraints.Email
+	private String				email;
 
 
-	@Valid
-	private Email				email;
+	private String				displayName;
+
 
 
 	// Derived attributes -----------------------------------------------------
 
 	@Transient
-	public String getFullName() {
+	public String getEmailPattern() {
 		StringBuilder result;
-
+		
 		result = new StringBuilder();
-		result.append(this.surname);
-		result.append(", ");
-		result.append(this.name);
-
+		if(this.displayName==null || this.displayName=="" || this.displayName.isEmpty()) {
+			result.append(this.email);
+			
+		}else {
+			result.append(this.displayName);
+			result.append(" <");
+			result.append(this.email);
+			result.append(">");
+		}
 		return result.toString();
 	}
 

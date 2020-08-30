@@ -30,7 +30,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="John" />
 				<property name="surname" value="Doe" />
-				<property name="email" value="john.doe@acme.com" />
+				<property name="email" ref="email01" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -54,7 +54,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Administrator" />
 				<property name="surname" value="Acme.com" />
-				<property name="email" value="administrator@acme.com" />
+				<property name="email" ref="email02" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -71,6 +71,15 @@
 	
 	<bean name="administratorAuthenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="administratorUserAccount" />
+	</bean>
+	
+	<bean name="email01" class="acme.datatypes.Email">
+		<property name="displayName" value="John Doe" />
+		<property name="email" value="johndoe@acme.com" />
+	</bean>
+	<bean name="email02" class="acme.datatypes.Email">
+		<property name="displayName" value="Administrator" />
+		<property name="email" value="administrator@acme.com" />
 	</bean>
 	
 </beans>
