@@ -35,9 +35,10 @@ public class Email extends DomainDatatype {
 
 
 	@NotBlank
+	@javax.validation.constraints.Email
 	private String				email;
 
-	@NotBlank
+
 	private String				displayName;
 
 
@@ -45,18 +46,18 @@ public class Email extends DomainDatatype {
 	// Derived attributes -----------------------------------------------------
 
 	@Transient
-	public String toString() {
+	public String getEmailPattern() {
 		StringBuilder result;
 		
 		result = new StringBuilder();
-		if(this.getDisplayName().isEmpty()) {
+		if(this.displayName==null || this.displayName=="" || this.displayName.isEmpty()) {
+			result.append(this.email);
+			
+		}else {
 			result.append(this.displayName);
-			result.append(" ");
-			result.append("<");
+			result.append(" <");
 			result.append(this.email);
 			result.append(">");
-		}else {
-			result.append(this.email);
 		}
 		return result.toString();
 	}

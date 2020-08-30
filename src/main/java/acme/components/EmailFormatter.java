@@ -21,12 +21,13 @@ public class EmailFormatter implements Formatter<Email>{
 		assert locale != null;
 		
 		String result;
-		String emailText, displayNameText;
+		String emailText;
+//		String displayNameText;
 		
-		displayNameText = object.getDisplayName() == null ? " " : String.format("%s <", object.getDisplayName());
+	//	displayNameText = object.getDisplayName() == null ? " " : String.format("%s", object.getDisplayName());
 		emailText = String.format("%s", object.getEmail());
 
-		result = String.format("%s%s>", displayNameText, emailText);
+		result = String.format("%s", emailText);
 		return result;
 	}
 
@@ -43,11 +44,11 @@ public class EmailFormatter implements Formatter<Email>{
 		String errorMessage;
 		String email, displayNameEmail;
 		
-		displayNameCodeRegex = user.getIdentity().getName()+ " <";
-		emailCodeRegex = "^((?!\\.)[\\w-_.]*[^.])(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])$";
+		//displayNameCodeRegex = user.getIdentity().getName()+ " <";
+		emailCodeRegex = "^(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])$";
 		
-		emailRegex = String.format("^\\s*(?<DN>%1$s)(?<E>%2$s)\\s*$",
-				displayNameCodeRegex, emailCodeRegex);
+		emailRegex = String.format("^\\s*(?<E>%1$s)\\s*$",
+				 emailCodeRegex);
 		
 		pattern =  Pattern.compile(emailRegex, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
 		matcher = pattern .matcher(text);
@@ -56,12 +57,12 @@ public class EmailFormatter implements Formatter<Email>{
 			errorMessage = MessageHelper.getMessage("default.error.conversion", null, "Invalid value", locale);
 			throw new ParseException(errorMessage, 0);
 		} else {
-			displayNameEmail = matcher.group("DN");
+			//sdisplayNameEmail = matcher.group("DN");
 			email = matcher.group("E");
 			
 
 			result = new Email();
-			result.setDisplayName(displayNameEmail);
+			//result.setDisplayName(displayNameEmail);
 			result.setEmail(email);
 		}
 
