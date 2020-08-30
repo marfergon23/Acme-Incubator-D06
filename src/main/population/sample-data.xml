@@ -58,7 +58,7 @@
 		<property name="inventorName" value="Name 1" />
 		<property name="description" value="Description 1" />
 		<property name="webSite" value="https://www.website1.com/" />
-		<property name="email" value="email1@gmail.com" />
+		<property name="email" value="sardongui@gmail.com" />
 		<property name="indication" value="closed-source" />
 		<property name="stars" value="3" />
 	</bean>
@@ -68,7 +68,7 @@
 		<property name="inventorName" value="Name 2" />
 		<property name="description" value="Description 2" />
 		<property name="webSite" value="https://www.website2.com/" />
-		<property name="email" value="email2@gmail.com" />
+		<property name="email" value="marfergon@gmail.com" />
 		<property name="indication" value="open-source" />
 		<property name="stars" value="-5" />
 	</bean>
@@ -78,7 +78,7 @@
 		<property name="inventorName" value="Name 3" />
 		<property name="description" value="Description 3" />
 		<property name="webSite" value="https://www.website3.com/" />
-		<property name="email" value="email3@gmail.com" />
+		<property name="email" value="marmarser@gmail.com" />
 		<property name="indication" value="open-source" />
 		<property name="stars" value="-1" />
 	</bean>
@@ -114,7 +114,7 @@
 		<property name="description" value="this is the first inquire."></property>
 		<property name="minMoney" value="20.23€"></property>
 		<property name="maxMoney" value="100.23€"></property>
-		<property name="email" value="inquire@gmail.com"></property>
+		<property name="email" value="inquire1@gmail.com"></property>
 	</bean>
 
 	<bean id="Inquirie02" class="acme.entities.inquiries.Inquirie">

@@ -21,13 +21,12 @@ public class EmailFormatter implements Formatter<Email>{
 		assert locale != null;
 		
 		String result;
-		String userText, domainText, displayNameText;
+		String emailText, displayNameText;
 		
 		displayNameText = object.getDisplayName() == null ? " " : String.format("%s <", object.getDisplayName());
-		userText = String.format("%s", object.getUser());
-		domainText = String.format("@%s", object.getDomain());
-		
-		result = String.format("%s%s%s>", displayNameText, userText, domainText);
+		emailText = String.format("%s", object.getEmail());
+
+		result = String.format("%s%s>", displayNameText, emailText);
 		return result;
 	}
 
@@ -38,18 +37,17 @@ public class EmailFormatter implements Formatter<Email>{
 		
 		UserAccount user = new UserAccount();
 		Email result;
-		String userCodeRegex, domainCodeRegex, displayNameCodeRegex, emailRegex;
+		String emailCodeRegex, displayNameCodeRegex, emailRegex;
 		Pattern pattern;
 		Matcher matcher;
 		String errorMessage;
-		String userEmail, domainEmail, displayNameEmail;
+		String email, displayNameEmail;
 		
 		displayNameCodeRegex = user.getIdentity().getName()+ " <";
-		userCodeRegex = "^((?!\\\\.)"+ user.getUsername();
-		domainCodeRegex = "^(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])$";
+		emailCodeRegex = "^((?!\\.)[\\w-_.]*[^.])(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])$";
 		
-		emailRegex = String.format("^\\s*(?<DN>%1$s)(\\s+\\((?<U>%2$s)\\)\\s+|\\s+)(?<D>%3$s)\\s*$",
-				displayNameCodeRegex, userCodeRegex, domainCodeRegex);
+		emailRegex = String.format("^\\s*(?<DN>%1$s)(?<E>%2$s)\\s*$",
+				displayNameCodeRegex, emailCodeRegex);
 		
 		pattern =  Pattern.compile(emailRegex, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
 		matcher = pattern .matcher(text);
@@ -59,13 +57,12 @@ public class EmailFormatter implements Formatter<Email>{
 			throw new ParseException(errorMessage, 0);
 		} else {
 			displayNameEmail = matcher.group("DN");
-			userEmail = matcher.group("U");
-			domainEmail = matcher.group("D");
+			email = matcher.group("E");
+			
 
 			result = new Email();
 			result.setDisplayName(displayNameEmail);
-			result.setUser(userEmail);
-			result.setDomain(domainEmail);
+			result.setEmail(email);
 		}
 
 		return result;

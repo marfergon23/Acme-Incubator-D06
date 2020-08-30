@@ -33,11 +33,9 @@ public class Email extends DomainDatatype {
 
 	// Attributes -------------------------------------------------------------
 
-	@NotBlank
-	private String				user;
 
 	@NotBlank
-	private String				domain;
+	private String				email;
 
 	@NotBlank
 	private String				displayName;
@@ -55,15 +53,10 @@ public class Email extends DomainDatatype {
 			result.append(this.displayName);
 			result.append(" ");
 			result.append("<");
-			result.append(this.user);
-			result.append("@ ");
-			result.append(this.domain);
+			result.append(this.email);
 			result.append(">");
 		}else {
-		
-		result.append(this.user);
-		result.append("@ ");
-		result.append(this.domain);
+			result.append(this.email);
 		}
 		return result.toString();
 	}
