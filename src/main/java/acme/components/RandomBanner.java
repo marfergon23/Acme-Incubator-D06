@@ -14,7 +14,7 @@ public class RandomBanner {
 	private RandomBannerRepository repository;
 
 
-	@ModelAttribute("banner")
+	@ModelAttribute("randomBanner")
 	public Banner getBanner() {
 		Banner result;
 

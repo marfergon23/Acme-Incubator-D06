@@ -79,7 +79,7 @@ public class PatronBannerUpdateService implements AbstractUpdateService<Patron, 
 
 		boolean sloganHasErrors = errors.hasErrors("slogan");
 		if (!sloganHasErrors) {
-			errors.state(request, !cp.isSpam(entity.getSlogan()), "slogan", "sponsor.commercial-banner.form.error.spam");
+			errors.state(request, !cp.isSpam(entity.getSlogan()), "slogan", "sponsor.banner.form.error.spam");
 		}
 	}
 

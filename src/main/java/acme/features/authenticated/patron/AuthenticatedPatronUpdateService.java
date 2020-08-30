@@ -44,7 +44,7 @@ public class AuthenticatedPatronUpdateService implements AbstractUpdateService<A
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "organisation", "number", "monthExpiration", "yearExpiration", "cvv");
+		request.unbind(entity, model, "organisation");
 	}
 
 	@Override

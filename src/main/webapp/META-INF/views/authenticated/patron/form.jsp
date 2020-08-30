@@ -17,14 +17,11 @@
 
 <acme:form>
 	<acme:form-textbox code="authenticated.patron.form.label.organisation" path="organisation" />
-	<acme:form-textbox code="authenticated.patron.form.label.number" path="number" />
-	<acme:form-textbox code="authenticated.patron.form.label.monthExpiration" path="monthExpiration" />
-	<acme:form-textbox code="authenticated.patron.form.label.yearExpiration" path="yearExpiration" />
-	<acme:form-textbox code="authenticated.patron.form.label.cvv" path="cvv" />
 
 	<acme:form-submit test="${command == 'create'}" code="authenticated.patron.form.button.create"
 		action="/authenticated/patron/create" />
 	<acme:form-submit test="${command == 'update'}" code="authenticated.patron.form.button.update"
 		action="/authenticated/patron/update" />
+
 	<acme:form-return code="authenticated.patron.form.button.return" />
 </acme:form>
