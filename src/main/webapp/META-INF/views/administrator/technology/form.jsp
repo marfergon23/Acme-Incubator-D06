@@ -9,7 +9,7 @@
 	<acme:form-textbox code="administrator.technology.form.label.inventorName" path="inventorName" />
 	<acme:form-textarea code="administrator.technology.form.label.description" path="description" />
 	<acme:form-url code="administrator.technology.form.label.webSite" path="webSite" />
-	<acme:form-textbox code="administrator.technology.form.label.email" path="email" />
+	<acme:form-email code="administrator.technology.form.label.email" path="email"  placeholder="Display Name <user@domain>"/>
 	<acme:form-textbox code="administrator.technology.form.label.indication" path="indication" />
 	<acme:form-textbox code="administrator.technology.form.label.stars" path="stars" />
 

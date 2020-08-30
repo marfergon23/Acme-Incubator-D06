@@ -21,7 +21,7 @@
 	<acme:form-textbox code="anonymous.technology.form.label.inventorName" path="inventorName" />
 	<acme:form-textarea code="anonymous.technology.form.label.description" path="description" />
 	<acme:form-url code="anonymous.technology.form.label.webSite" path="webSite" />
-	<acme:form-textbox code="anonymous.technology.form.label.email" path="email" />
+	<acme:form-email code="anonymous.technology.form.label.email" path="email" placeholder="Display Name <user@domain>" />
 	<acme:form-textbox code="anonymous.technology.form.label.indication" path="indication" />
 	<acme:form-textbox code="anonymous.technology.form.label.stars" path="stars" />
 	
