@@ -13,6 +13,7 @@ patron.banner.form.button.create = Create
 patron.banner.form.button.update = Update
 patron.banner.form.button.delete = Delete
 patron.banner.form.button.return = Return
+sponsor.banner.form.error.spam = Text is spam
 
 patron.banner.form.button.card.create = Add Credit Card
 
