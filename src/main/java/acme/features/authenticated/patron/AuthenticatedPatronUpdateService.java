@@ -45,6 +45,9 @@ public class AuthenticatedPatronUpdateService implements AbstractUpdateService<A
 		assert model != null;
 
 		request.unbind(entity, model, "organisation");
+		Patron patron = this.repository.findOnePatronByUserAccountId(request.getPrincipal().getAccountId());
+		model.setAttribute("hasCreditCard", patron.getCard() != null);
+
 	}
 
 	@Override

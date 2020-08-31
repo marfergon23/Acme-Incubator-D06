@@ -25,6 +25,7 @@ import org.hibernate.annotations.LazyCollectionOption;
 
 import acme.entities.banners.Banner;
 import acme.entities.creditCards.CreditCard;
+import acme.entities.creditCards.CreditCardForPatron;
 import acme.framework.entities.UserRole;
 import lombok.Getter;
 import lombok.Setter;
@@ -49,7 +50,7 @@ public class Patron extends UserRole {
 
 	@OneToOne(optional = true)
 	@Valid
-	private CreditCard					card;
+	private CreditCardForPatron					card;
 
 	@LazyCollection(LazyCollectionOption.FALSE)
 	@OneToMany(mappedBy = "patron")

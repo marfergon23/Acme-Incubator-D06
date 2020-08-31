@@ -22,6 +22,13 @@
 		action="/authenticated/patron/create" />
 	<acme:form-submit test="${command == 'update'}" code="authenticated.patron.form.button.update"
 		action="/authenticated/patron/update" />
+		
+	<jstl:if test="${command != 'create' and !hasCreditCard}">
+		<acme:form-submit method="get" code="patron.patron.form.button.card.create" action="/patron/credit-card-for-patron/create"/>	
+	</jstl:if>
+	<jstl:if test="${command != 'create' and hasCreditCard}">
+		<acme:form-submit method="get" code="patron.patron.form.button.card.show" action="/patron/credit-card-for-patron/show?id=${id}"/>	
+	</jstl:if>
 
 	<acme:form-return code="authenticated.patron.form.button.return" />
 </acme:form>

@@ -1,0 +1,11 @@
+patron.creditCard.label.holder = Nombre del patrocinador
+patron.creditCard.label.number = Número Tarjeta de Crédito
+patron.creditCard.label.brand = Marca
+patron.creditCard.label.month = Mes de caducidad
+patron.creditCard.label.year = Año de caducidad
+patron.creditCard.label.cvv = CVV
+	
+patron.creditCard.form.button.create = Crear
+patron.creditCard.form.button.update = Actualizar
+	
+patron.creditCard.button.return = Volver

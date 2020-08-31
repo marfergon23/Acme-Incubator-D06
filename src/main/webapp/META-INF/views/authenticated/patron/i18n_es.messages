@@ -7,3 +7,6 @@ authenticated.patron.form.label.cvv = CVV:
 authenticated.patron.form.button.create = Registrarse
 authenticated.patron.form.button.update = Actualizar
 authenticated.patron.form.button.return = Volver
+
+patron.patron.form.button.card.create = Crear tarjeta de crédito
+patron.patron.form.button.card.show = Mostrar tarjeta de crédito

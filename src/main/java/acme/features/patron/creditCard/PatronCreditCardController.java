@@ -1,5 +1,5 @@
 
-package acme.features.patron.creditCatd;
+package acme.features.patron.creditCard;
 
 import javax.annotation.PostConstruct;
 
@@ -17,7 +17,10 @@ import acme.framework.controllers.AbstractController;
 public class PatronCreditCardController extends AbstractController<Patron, CreditCard> {
 
 	@Autowired
-	private PatronCreditCardCreateService createService;
+	private PatronCreditCardCreateService	createService;
+
+	@Autowired
+	private PatronCreditCardShowService		showService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -25,5 +28,6 @@ public class PatronCreditCardController extends AbstractController<Patron, Credi
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }
