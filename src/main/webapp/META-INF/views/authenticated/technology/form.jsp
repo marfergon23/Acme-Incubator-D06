@@ -21,7 +21,7 @@
 	<acme:form-textbox code="authenticated.technology.form.label.inventorName" path="inventorName" />
 	<acme:form-textarea code="authenticated.technology.form.label.description" path="description" />
 	<acme:form-url code="authenticated.technology.form.label.webSite" path="webSite" />
-	<acme:form-email code="authenticated.technology.form.label.email" path="email" placeholder="Display Name <user@domain>"/>
+	<acme:form-email code="authenticated.technology.form.label.email" path="email" placeholder="user@domain"/>
 	<acme:form-textbox code="authenticated.technology.form.label.indication" path="indication" />
 	<acme:form-textbox code="authenticated.technology.form.label.stars" path="stars" />
 	

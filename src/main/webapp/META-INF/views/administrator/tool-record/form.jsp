@@ -22,7 +22,7 @@
 	<acme:form-textbox code="administrator.tool-record.form.label.inventor" path="inventor" />
 	<acme:form-textarea code="administrator.tool-record.form.label.description" path="description" />
 	<acme:form-url code="administrator.tool-record.form.label.web" path="web" />
-	<acme:form-email code="administrator.tool-record.form.label.email" path="email" placeholder="Display Name <user@domain>"/>
+	<acme:form-email code="administrator.tool-record.form.label.email" path="email" placeholder="user@domain"/>
 	<acme:form-textbox code="administrator.tool-record.form.label.indication" path="indication" placeholder="open-source or closed-source"/>
 	<acme:form-textbox code="administrator.tool-record.form.label.stars" path="stars" placeholder="-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5"/>
 	
