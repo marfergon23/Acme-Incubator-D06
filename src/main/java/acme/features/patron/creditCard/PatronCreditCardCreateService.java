@@ -1,5 +1,5 @@
 
-package acme.features.patron.creditCatd;
+package acme.features.patron.creditCard;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,6 @@ public class PatronCreditCardCreateService implements AbstractCreateService<Patr
 
 	@Override
 	public boolean authorise(final Request<CreditCard> request) {
-		assert request != null;
 		assert request != null;
 
 		boolean result;
@@ -58,13 +57,16 @@ public class PatronCreditCardCreateService implements AbstractCreateService<Patr
 		request.unbind(entity, model, "holder", "number", "brand", "month", "year", "cvv");
 		Integer banner = request.getModel().getInteger("banner");
 		model.setAttribute("banner", banner);
+
 	}
 
 	@Override
 	public CreditCard instantiate(final Request<CreditCard> request) {
 		CreditCard res;
 		res = new CreditCard();
-		res.setPatron(null);
+		int patronId = request.getPrincipal().getActiveRoleId();
+		Patron patron = this.repository.findOnePatronByUserAccountId(patronId);
+		res.setPatron(patron);
 
 		return res;
 	}
@@ -85,6 +87,7 @@ public class PatronCreditCardCreateService implements AbstractCreateService<Patr
 		Integer id = request.getModel().getInteger("banner");
 		Banner banner = this.repository.findBannerById(id);
 		banner.setCreditCard(entity);
+		this.repository.save(banner);
 
 		this.repository.save(entity);
 	}

@@ -24,9 +24,7 @@
 	<acme:form-textbox code="patron.creditCard.label.year" path="year" />
 	<acme:form-textbox code="patron.creditCard.label.cvv" path="cvv" />
 
-	<acme:form-submit method="post" test="${command == 'create'}" code="patron.creditCard.form.button.create" action="/patron/credit-card/create" />
-
-	<input id="banner" name="banner" value="${banner}" type="hidden" />
+	<acme:form-submit method="post" test="${command == 'create'}" code="patron.creditCard.form.button.create" action="/patron/credit-card-for-patron/create" />
 	<input id="creditCard" name="creditCard" value="${creditCard}" type="hidden" />
 	<input id="patron" name="patron" value="${patron}" type="hidden" />
 	

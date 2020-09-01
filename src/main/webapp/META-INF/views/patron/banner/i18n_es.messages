@@ -8,7 +8,8 @@ patron.banner.form.label.monthExpiration = Mes de Caducidad de Tarjeta de Credit
 patron.banner.form.label.yearExpiration = Año de Caducidad de Tarjeta de Credito
 patron.banner.form.label.cvv = CVV de Tarjeta de Credito
 patron.banner.form.label.patron = Cliente
-
+patron.banner.form.label.creditCard = Tarjeta de crédito (Opcional)
+patron.banner.form.button.creditCard.update = Actualizar Tarjeta de Crédito
 patron.banner.form.button.create = Crear
 patron.banner.form.button.update = Editar
 patron.banner.form.button.delete = Borrar

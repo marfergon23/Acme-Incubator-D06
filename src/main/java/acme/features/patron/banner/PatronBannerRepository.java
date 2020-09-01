@@ -29,4 +29,7 @@ public interface PatronBannerRepository extends AbstractRepository {
 	@Query("select c from Customisation c")
 	Customisation findOneCustomisation();
 
+	@Query("select distinct b from Banner b where b.creditCard.id=?1")
+	Banner findCreditCardByBannerId(int creditCardId);
+
 }

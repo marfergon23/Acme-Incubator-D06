@@ -97,16 +97,20 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `consumer` (
+    create table `credit_card` (
        `id` integer not null,
         `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
+        `brand` varchar(255),
+        `cvv` varchar(255),
+        `holder` varchar(255),
+        `month` integer,
+        `number` varchar(255),
+        `year` integer,
+        `patron_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `credit_card` (
+    create table `credit_card_for_patron` (
        `id` integer not null,
         `version` integer not null,
         `brand` varchar(255),
@@ -282,15 +286,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `provider` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `technology` (
        `id` integer not null,
         `version` integer not null,
@@ -420,13 +415,13 @@ create index IDX2q2747fhp099wkn3j2yt05fhs on `application` (`status`);
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `consumer` 
-       add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
     alter table `credit_card` 
        add constraint `FK31e9eqi896koc93q7yjs5yoox` 
+       foreign key (`patron_id`) 
+       references `patron` (`id`);
+
+    alter table `credit_card_for_patron` 
+       add constraint `FKt4r2xk2tub96vxanpfvkfitmc` 
        foreign key (`patron_id`) 
        references `patron` (`id`);
 
@@ -461,17 +456,12 @@ create index IDX2q2747fhp099wkn3j2yt05fhs on `application` (`status`);
        references `authenticated` (`id`);
 
     alter table `patron` 
-       add constraint `FKlyiwy22y6u5hmqeb4s0bmoh13` 
+       add constraint `FKf1ihd7188521w9d7dda78s8xj` 
        foreign key (`card_id`) 
-       references `credit_card` (`id`);
+       references `credit_card_for_patron` (`id`);
 
     alter table `patron` 
        add constraint FK_8xx5nujhuio3advxc2freyu65 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
-    alter table `provider` 
-       add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 

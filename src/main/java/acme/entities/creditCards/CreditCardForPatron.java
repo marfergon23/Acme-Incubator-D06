@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 import javax.validation.constraints.Max;
@@ -25,7 +25,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class CreditCard extends DomainEntity {
+public class CreditCardForPatron extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
@@ -54,7 +54,7 @@ public class CreditCard extends DomainEntity {
 	// RELATIONSHIPS
 
 	@Valid
-	@ManyToOne(optional = true)
+	@OneToOne(optional = true)
 	private Patron				patron;
 
 
