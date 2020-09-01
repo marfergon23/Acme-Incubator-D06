@@ -14,7 +14,7 @@ import acme.framework.services.AbstractShowService;
 public class PatronCreditCardShowService implements AbstractShowService<Patron, CreditCard> {
 
 	@Autowired
-	PatronCreditCardRepository Repository;
+	PatronCreditCardRepository repository;
 
 
 	@Override
@@ -23,9 +23,9 @@ public class PatronCreditCardShowService implements AbstractShowService<Patron, 
 
 		Boolean res = false;
 		int patronId = request.getPrincipal().getActiveRoleId();
-		Patron patron = this.Repository.findOnePatronByUserAccountId(patronId);
+		Patron patron = this.repository.findOnePatronByUserAccountId(patronId);
 		int cdId = request.getModel().getInteger("id");
-		CreditCard cd = this.Repository.findOneCreditCardById(cdId);
+		CreditCard cd = this.repository.findOneCreditCardById(cdId);
 		if (cd.getPatron().getId() == patron.getId()) {
 			res = true;
 		}
@@ -47,7 +47,7 @@ public class PatronCreditCardShowService implements AbstractShowService<Patron, 
 	public CreditCard findOne(final Request<CreditCard> request) {
 		assert request != null;
 		int id = request.getModel().getInteger("id");
-		CreditCard res = this.Repository.findOneCreditCardById(id);
+		CreditCard res = this.repository.findOneCreditCardById(id);
 		return res;
 	}
 

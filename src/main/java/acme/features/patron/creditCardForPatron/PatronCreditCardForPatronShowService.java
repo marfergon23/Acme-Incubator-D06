@@ -22,10 +22,12 @@ public class PatronCreditCardForPatronShowService implements AbstractShowService
 		assert request != null;
 
 		Boolean res = false;
+		int patronId = request.getPrincipal().getActiveRoleId();
+		Patron patron = this.Repository.findOnePatronByUserAccountId(patronId);
 		int id = request.getModel().getInteger("id");
 		CreditCardForPatron cd = this.Repository.findOneCreditCardForPatronById(id);
-		int idPatron = request.getPrincipal().getActiveRoleId();
-		if (cd.getPatron().getId() == idPatron) {
+	
+		if (cd.getPatron().getId() == patron.getId()) {
 			res = true;
 		}
 		return res;

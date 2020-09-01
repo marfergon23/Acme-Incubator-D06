@@ -51,6 +51,8 @@ public class Patron extends UserRole {
 	@OneToOne(optional = true)
 	@Valid
 	private CreditCardForPatron					card;
+	
+	
 
 	@LazyCollection(LazyCollectionOption.FALSE)
 	@OneToMany(mappedBy = "patron")

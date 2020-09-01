@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import acme.entities.creditCards.CreditCardForPatron;
 import acme.entities.roles.Patron;
+import acme.features.patron.creditCard.PatronCreditCardUpdateService;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
@@ -21,6 +22,9 @@ public class PatronCreditCardForPatronController extends AbstractController<Patr
 
 	@Autowired
 	private PatronCreditCardForPatronShowService	showService;
+	
+	@Autowired
+	private PatronCreditCardForPatronUpdateService		updateService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -29,5 +33,6 @@ public class PatronCreditCardForPatronController extends AbstractController<Patr
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 }
