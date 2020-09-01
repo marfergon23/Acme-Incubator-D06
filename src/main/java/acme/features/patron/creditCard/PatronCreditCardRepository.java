@@ -21,4 +21,6 @@ public interface PatronCreditCardRepository extends AbstractRepository {
 	@Query("select cd from CreditCard cd where cd.id =?1")
 	CreditCard findOneCreditCardById(int id);
 
+	@Query("select b from Banner b where b.creditCard.id = ?1")
+	Banner findBannerByCreditCardId(int creditCardId);
 }
