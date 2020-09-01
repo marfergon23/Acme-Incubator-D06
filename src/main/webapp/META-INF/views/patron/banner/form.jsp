@@ -29,7 +29,6 @@
 	<acme:form-textbox code="patron.creditCard.label.month" path="creditCard.month" readonly="true"/>
 	<acme:form-textbox code="patron.creditCard.label.year" path="creditCard.year" readonly="true"/>
 	<acme:form-textbox code="patron.creditCard.label.cvv" path="creditCard.cvv" readonly="true"/>
-	<acme:form-submit method="get" code="patron.banner.form.button.creditCard.update" action="/patron/credit-card/update?creditCard=${creditCard}"/>	
 	
 	</jstl:if>
 

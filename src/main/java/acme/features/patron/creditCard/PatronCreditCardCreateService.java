@@ -56,9 +56,7 @@ public class PatronCreditCardCreateService implements AbstractCreateService<Patr
 		assert model != null;
 		request.unbind(entity, model, "holder", "number", "brand", "month", "year", "cvv");
 		Integer banner = request.getModel().getInteger("banner");
-		Integer patron = request.getModel().getInteger("patron");
 		model.setAttribute("banner", banner);
-		model.setAttribute("patron", patron);
 
 	}
 

@@ -19,13 +19,13 @@
 	<acme:form-textbox code="authenticated.patron.form.label.organisation" path="organisation" />
 	<jstl:if test="${command != 'create' and hasCreditCard}">
 	
-	<acme:form-textbox code="patron.creditCard.label.holder" path="card.holder" />
-	<acme:form-textbox code="patron.creditCard.label.number" path="card.number" />
-	<acme:form-textbox code="patron.creditCard.label.brand" path="card.brand" />
-	<acme:form-textbox code="patron.creditCard.label.month" path="card.month" />
-	<acme:form-textbox code="patron.creditCard.label.year" path="card.year"/>
-	<acme:form-textbox code="patron.creditCard.label.cvv" path="card.cvv" />
-	<acme:form-submit method="get" code="patron.banner.form.button.creditCard.update" action="/patron/credit-card-for-patron/update?card=${card}"/>	
+	<acme:form-textbox code="patron.creditCard.label.holder" path="card.holder" readonly="true"  />
+	<acme:form-textbox code="patron.creditCard.label.number" path="card.number" readonly="true"  />
+	<acme:form-textbox code="patron.creditCard.label.brand" path="card.brand" readonly="true"  />
+	<acme:form-textbox code="patron.creditCard.label.month" path="card.month" readonly="true"  />
+	<acme:form-textbox code="patron.creditCard.label.year" path="card.year" readonly="true" />
+	<acme:form-textbox code="patron.creditCard.label.cvv" path="card.cvv" readonly="true" />
+
 	
 	</jstl:if>
 	
