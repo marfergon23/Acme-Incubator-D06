@@ -56,11 +56,8 @@ public class AnonymousUserAccountCreateService implements AbstractCreateService<
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "username", "identity.name", "identity.surname");
+		request.unbind(entity, model, "username", "identity.name", "identity.surname", "identity.email");
 
-		String displayName = entity.getIdentity().getName() + " " + entity.getIdentity().getSurname();
-		entity.getIdentity().getEmail().setDisplayName(displayName);
-		
 		if (request.isMethod(HttpMethod.GET)) {
 			model.setAttribute("password", "");
 			model.setAttribute("confirmation", "");
@@ -68,7 +65,6 @@ public class AnonymousUserAccountCreateService implements AbstractCreateService<
 		} else {
 			request.transfer(model, "password", "confirmation", "accept");
 		}
-		
 
 	}
 
@@ -117,6 +113,9 @@ public class AnonymousUserAccountCreateService implements AbstractCreateService<
 	public void create(final Request<UserAccount> request, final UserAccount entity) {
 		assert request != null;
 		assert entity != null;
+
+		String displayName = entity.getIdentity().getName() + " " + entity.getIdentity().getSurname();
+		entity.getIdentity().getEmail().setDisplayName(displayName);
 
 		this.repository.save(entity);
 		for (UserRole role : entity.getRoles()) {
